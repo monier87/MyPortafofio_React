@@ -1,16 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Hero() {
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.onload = () => {
-      setSelectedImage(reader.result);
-    };
-    reader.readAsDataURL(file);
-  };
+  const imageUrl = 'https://drive.google.com/uc?export=download&id=1pcLGvfJJjvu0mykV3_bzlquv0N8po2WH';
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 pt-10 items-center'>
@@ -30,24 +21,11 @@ function Hero() {
       </div>
       <div className='flex justify-center'>
         <div className='h-[320px] w-[250px] p-2 rounded-[20px] bg-gradient-to-b from-[#FF004D]  to-[#2A26B8]'>
-          {selectedImage ? (
-            <img
-              src={selectedImage}
-              alt='Selected'
-              className='h-full w-[250px] object-cover rounded-[20px]'
-            />
-          ) : (
-            <label htmlFor='upload' className='cursor-pointer'>
-              <input
-                id='upload'
-                type='file'
-                accept='image/*'
-                onChange={handleImageChange}
-                className='hidden'
-              />
-              <span className='text-white text-sm'>Selecciona una foto</span>
-            </label>
-          )}
+          <img
+            src={imageUrl}
+            alt='Selected'
+            className='h-full w-[250px] object-cover rounded-[20px]'
+          />
         </div>
       </div>
     </div>
