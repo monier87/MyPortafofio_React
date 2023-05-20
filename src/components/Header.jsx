@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { HiMenu, HiX } from "react-icons/hi";
-import MenuOverlay from "./MenuOverlay";
+import { HiMenu, HiX } from 'react-icons/hi';
+import MenuOverlay from './MenuOverlay';
 
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -8,23 +8,28 @@ function Header() {
   const menuList = [
     {
       id: 1,
-      title: "Principal",
+      title: 'Principal',
+      link: '/',
     },
     {
       id: 2,
-      title: "Acerca de mí",
+      title: 'Acerca de mí',
+      link: '/about',
     },
     {
       id: 3,
-      title: "Servicios",
+      title: 'Servicios',
+      link: '/services',
     },
     {
       id: 4,
-      title: "Portafolio",
+      title: 'Portafolio',
+      link: '/portfolio',
     },
     {
       id: 5,
-      title: "Contacto",
+      title: 'Contacto',
+      link: '/contact',
     },
   ];
 
@@ -39,14 +44,14 @@ function Header() {
         <div className="hidden md:flex gap-4">
           {menuList.map((item) => (
             <div key={item.id}>
-              <h2 className="text-black hover:text-white hover:bg-red-500 rounded-full text-base md:text-lg px-3 py-1 cursor-pointer">
+              <a
+                href={item.link}
+                className="text-black hover:text-white hover:bg-red-500 rounded-full text-base md:text-lg px-3 py-1 cursor-pointer"
+              >
                 {item.title}
-              </h2>
+              </a>
             </div>
           ))}
-          <h2 className="text-black hover:text-white hover:bg-red-500 rounded-full text-base md:text-lg px-3 py-1 cursor-pointer">
-            Contrátame
-          </h2>
         </div>
       </div>
       <div className="md:hidden">
