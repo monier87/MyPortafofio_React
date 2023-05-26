@@ -58,7 +58,7 @@ function Header() {
         {!toggle ? (
           <HiMenu
             onClick={() => setToggle(!toggle)}
-            className="text-black text-2xl cursor-pointer"
+            className="absolute top-4 rigtht-4 z-[99] cursor-pointer"
           />
         ) : (
           <HiX
