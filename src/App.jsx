@@ -1,16 +1,18 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
+import React from 'react';
+import Header from './components/Header';
+import Main from './components/Main';
 
 function App() {
-
-
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-yellow-200 to-green-200 px-8 md:px-14 lg:px-36 pb-10 pt-7">
+    <div>
       <Header />
-      <Hero />
-    </div>
-  )
+      <Main />
 
+    </div>
+  );
 }
 
-export default App
+export default App;
+
+
+
