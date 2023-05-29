@@ -1,4 +1,6 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
+
 
 const Main = () => {
   const backgroundImageUrl =
@@ -27,19 +29,30 @@ const Main = () => {
             />
           </div>
         </div>
-        <div>
+        <div style={{ float: 'right' }}>
           <p className='text-blue-700 text-[20px] font-bold animate-pulse'>
             Hola, Bienvenidos a mi página
           </p>
-          <p className='text-Yellow text-[40px] font-bold animate-fade-in-down'>
-            Mi nombre es Carlos David
+          <p className='text-black-700 text-[40px] font-bold animate-fade-in-down'>
+            Mi nombre es {' '}
+            <span style={{ color: 'red' }}>Carlos David Monier</span>
           </p>
-          <p className='text-red-500 text-[40px] font-bold animate-fade-in-down'>
-            Soy Desarrollador Web
-          </p>
-          <p className='text-orange text-[40px] font-bold animate-fade-in-down'>
-            Ingeniero de Software
-          </p>
+          <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>
+            <TypeAnimation
+              sequence={[
+                ' Soy un Desarrollador Web', // Types 'One'
+                1000, // Waits 1s
+                'Soy un Ingeniero de Software', // Deletes 'One' and types 'Two'
+                2000, // Waits 2s
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              style={{ fontSize: '1em', display: 'inline-block', paddingLeft: '50px' }}
+            />
+          </h2>
+         
+
         </div>
       </div>
     </div>
@@ -47,4 +60,3 @@ const Main = () => {
 };
 
 export default Main;
-
