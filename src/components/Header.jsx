@@ -24,7 +24,7 @@ const Header = () => {
             </a>
             <a href='#main' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
               <AiOutlineProject zize={20} />
-              <span className='pl-4'>Work</span>
+              <span className='pl-4'>Experience</span>
             </a>
             <a href='#main' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
               <BsPerson zize={20} />
@@ -52,7 +52,7 @@ const Header = () => {
             <BsPerson size={20} />
           </a>
           <a href='#main' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-            <AiOutlineHome size={20} />
+            <AiOutlineMail size={20} />
           </a>
         </div>
       </div>
