@@ -1,7 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
-
 const Main = () => {
   const backgroundImageUrl =
     'https://drive.google.com/uc?export=view&id=198ua0oWssnOu6Qlw92NNiCYzBe8eZk4N';
@@ -19,8 +18,8 @@ const Main = () => {
         minHeight: '100vh',
       }}
     >
-      <div className='flex justify-center items-center h-screen'>
-        <div className='flex justify-center mr-10'>
+      <div className='flex flex-col items-center justify-center h-screen px-4 sm:px-6 lg:px-8'>
+        <div className='flex justify-center sm:justify-start items-center mt-16'>
           <div className='h-[320px] w-[250px] p-2 rounded-[20px] bg-gradient-to-b from-[#FF004D] to-[#2A26B8]'>
             <img
               src={imageUrl}
@@ -29,30 +28,32 @@ const Main = () => {
             />
           </div>
         </div>
-        <div style={{ float: 'right' }}>
-          <p className='text-blue-700 text-[20px] font-bold animate-pulse'>
-            Hola, Bienvenidos a mi página
+        <div className='mt-8 text-center sm:text-left'>
+          <p className='text-blue-700 text-2xl sm:text-3xl font-bold animate-pulse'>
+            Hola, bienvenidos a mi página
           </p>
-          <p className='text-black-700 text-[40px] font-bold animate-fade-in-down'>
+          <p className='text-black text-4xl sm:text-5xl font-bold animate-fade-in-down'>
             Mi nombre es {' '}
-            <span style={{ color: 'red' }}>Carlos David Monier</span>
+            <span style={{ color: 'red' }}>
+              Carlos David Monier
+            </span>
           </p>
-          <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>
+          <h2 className='text-3xl sm:text-4xl pt-4 text-blue-600 font-bold'>
             <TypeAnimation
               sequence={[
-                ' Soy un Desarrollador Web', // Types 'One'
-                1000, // Waits 1s
-                'Soy un Ingeniero de Software', // Deletes 'One' and types 'Two'
-                2000, // Waits 2s
+                'Soy un Desarrollador Web',
+                1000,
+                '\u00A0Ingeniero de Software',
+                2000,
+                'Scrum Master',
+                2000,
               ]}
-              wrapper="span"
+              wrapper='span'
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: '1em', display: 'inline-block', paddingLeft: '50px' }}
+              className='inline-block'
             />
           </h2>
-         
-
         </div>
       </div>
     </div>
