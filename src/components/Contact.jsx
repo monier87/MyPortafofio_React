@@ -1,10 +1,13 @@
 import React from 'react';
 
 const Contact = () => {
+const sendMail=()=> window.location = "mailto:carlos.monier87@gmail.com";
+
     return (
         <div id='contact' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
             <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>Contact</h1>
-            <form action="https://getform.io/f/2d845e30-3f34-4963-815f-6af2e1e4a326" method='POST' encType='multipart/form-data'>
+            {/* <form action="https://getform.io/f/2d845e30-3f34-4963-815f-6af2e1e4a326" method='POST' encType='multipart/form-data'> */}
+            <form action=""  method='POST' encType='multipart/form-data'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     <div className='flex flex-col'>
                         <label htmlFor='name' className='block font-bold'>Name</label>
@@ -55,7 +58,8 @@ const Contact = () => {
                 </div>
                 <div className='mt-4'>
                     <button
-                        type='submit'
+                        // type='submit'
+                        onClick={sendMail}
                         className='bg-blue-500 text-white font-bold py-2 px-4 rounded w-full'
                     >
                         Enviar
