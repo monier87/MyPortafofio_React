@@ -29,12 +29,14 @@ const Main = () => {
           </div>
         </div>
         <div className='mt-8 text-center sm:text-left'>
-          <p className='text-blue-700 text-2xl sm:text-3xl font-bold animate-pulse'>
+          <p className='text-[#001b5e] text-2xl sm:text-3xl font-bold animate-pulse'>
             Hola, bienvenidos a mi página
           </p>
-          <p className='text-black text-4xl sm:text-5xl font-bold animate-fade-in-down'>
-            Mi nombre es {' '}
-            <span style={{ color: 'red' }}>
+          <div className='mb-2' />
+          <p className='text-[#001b5e] text-4xl sm:text-5xl font-bold animate-fade-in-down'>
+            Mi nombre es{' '}
+            <br className='block sm:hidden' />
+            <span style={{ color: '#FF004D' }}>
               Carlos David Monier
             </span>
           </p>
