@@ -20,7 +20,7 @@ const Main = () => {
     >
       <div className='flex flex-col items-center justify-center h-screen px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-center sm:justify-start items-center mt-16'>
-          <div className='h-[320px] w-[250px] p-2 rounded-[20px] bg-gradient-to-b from-[#FF004D] to-[#2A26B8]'>
+          <div className='h-[320px] w-[250px] p-2 rounded-[20px] bg-blue-600'>
             <img
               src={imageUrl}
               alt='Selected'
@@ -36,11 +36,11 @@ const Main = () => {
           <p className='text-[#001b5e] text-4xl sm:text-5xl font-bold animate-fade-in-down'>
             Mi nombre es{' '}
             <br className='block sm:hidden' />
-            <span style={{ color: '#FF004D' }}>
+            <span style={{ color: '#001b5e' }}>
               Carlos David Monier
             </span>
           </p>
-          <h2 className='text-3xl sm:text-4xl pt-4 text-blue-600 font-bold'>
+          <h2 className='text-3xl sm:text-4xl pt-4 text-black font-bold'>
             <TypeAnimation
               sequence={[
                 'Soy un Desarrollador Web',
