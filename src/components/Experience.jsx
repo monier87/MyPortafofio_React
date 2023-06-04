@@ -44,7 +44,7 @@ const data = {
 
 const Experience = () => {
     return (
-        <div id='experience' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+        <div id='experience' style={{ maxWidth: '1040px', margin: '0 auto' }} className='md:pl-20 p-4 py-16'>
             <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Experience</h1>
             {data.habilidades.map((item, idx) => (
                 <ExperienceItem key={idx} nombre={item.nombre} descripcion={item.descripcion} />
