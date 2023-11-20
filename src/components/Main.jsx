@@ -8,6 +8,9 @@ const Main = () => {
   const imageUrl =
     'https://drive.google.com/uc?export=view&id=1pcLGvfJJjvu0mykV3_bzlquv0N8po2WH';
 
+  
+
+
   return (
     <div
       id='main'
@@ -46,8 +49,6 @@ const Main = () => {
                 'Soy un Desarrollador Web',
                 1000,
                 '\u00A0Ingeniero de Software',
-                2000,
-                'Scrum Master',
                 2000,
               ]}
               wrapper='span'

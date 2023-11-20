@@ -38,6 +38,9 @@ const Header = () => {
     };
   }, []);
 
+  const handleDownload = () => window.open("/CV-Carlos David 2023.pdf", "_blank")
+
+
   return (
     <div>
       <AiOutlineMenu
@@ -49,7 +52,9 @@ const Header = () => {
           <a
             onClick={(e) => handleNav(e, 'main')}
             href='#'
-            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'
+            className='w-[75%] flex justify-center items-center
+             rounded-full shadow-lg bg-gray-100 shadow-gray-400
+              m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'
           >
             <AiOutlineHome size={20} />
             <span className='pl-4'>Home</span>
@@ -63,8 +68,8 @@ const Header = () => {
             <span className='pl-4'>Experience</span>
           </a>
           <a
-            onClick={(e) => handleNav(e, 'contact')}
-            href='#'
+            onClick={()=>handleDownload()}
+            // href={'/example.pdf'}
             className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'
           >
             <BsPerson size={20} />
@@ -102,11 +107,12 @@ const Header = () => {
           <AiOutlineProject size={20} />
         </a>
         <a
-          onClick={(e) => handleNav(e, 'contact')}
+          onClick={handleDownload}
           href='#'
-          className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
+          className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-1.5 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
         >
-          <BsPerson size={20} />
+          {/* <BsPerson size={20} /> */}
+          CV
         </a>
         <a
           onClick={(e) => handleNav(e, 'contact')}
@@ -116,7 +122,9 @@ const Header = () => {
           <AiOutlineMail size={20} />
         </a>
       </div>
+     
     </div>
+    
   );
 };
 
