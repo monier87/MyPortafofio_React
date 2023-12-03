@@ -1,12 +1,15 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
-const Main = () => {
-  const backgroundImageUrl =
-    'https://drive.google.com/uc?export=view&id=198ua0oWssnOu6Qlw92NNiCYzBe8eZk4N';
 
-  const imageUrl =
-    'https://drive.google.com/uc?export=view&id=1pcLGvfJJjvu0mykV3_bzlquv0N8po2WH';
+
+
+const Main = () => {
+  const backgroundImageUrl ='/fondo.jpg';
+  
+
+    const imageUrl = '/MyPhoto.jpg';
+
 
   
 
