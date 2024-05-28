@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineHome, AiOutlineMail, AiOutlineProject } from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
 
@@ -38,7 +38,7 @@ const Header = () => {
     };
   }, []);
 
-  const handleDownload = () => window.open("/CV-Carlos David 2023.pdf", "_blank")
+  const handleDownload = () => window.open("/CV-Carlos David 2024.pdf", "_blank")
 
 
   return (
